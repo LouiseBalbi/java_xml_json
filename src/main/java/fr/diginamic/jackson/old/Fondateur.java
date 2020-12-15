@@ -3,11 +3,15 @@ package fr.diginamic.jackson.old;
 import java.time.LocalDate;
 
 import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+
+import fr.diginamic.jackson.LocalDateSerializer;
 
 public class Fondateur {
 	
 	private String prenom;
 	private String nom;
+	@JsonSerialize(using = LocalDateSerializer.class)
 	@JsonDeserialize(using = LocalDateDeserializer.class)
 	private LocalDate naissance;
 	private String villeNaissance;

@@ -9,6 +9,11 @@ import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonInclude;
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonPropertyOrder;
+import com.fasterxml.jackson.databind.annotation.JsonDeserialize;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+
+import fr.diginamic.jackson.LocalDateSerializer;
+import fr.diginamic.jackson.old.LocalDateDeserializer;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 @JsonPropertyOrder({
@@ -24,6 +29,8 @@ public class Fondateur {
     private String prenom;
     @JsonProperty("nom")
     private String nom;
+	@JsonSerialize(using = LocalDateSerializer.class)
+	@JsonDeserialize(using = LocalDateDeserializer.class)
     @JsonProperty("naissance")
     private String naissance;
     @JsonProperty("villeNaissance")

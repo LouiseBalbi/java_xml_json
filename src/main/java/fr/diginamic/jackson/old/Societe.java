@@ -9,6 +9,21 @@ public class Societe {
 	private SiegeSocial siegeSocial;
 	private List<Fondateur> fondateurs = new ArrayList<>();
 	private List<ChiffreAffaire> chiffreAffaire = new ArrayList<>();
+	
+	
+	/**
+	 * 
+	 */
+	public Societe() {
+		super();
+	}
+	/**
+	 * @param nom
+	 */
+	public Societe(String nom) {
+		super();
+		this.nom = nom;
+	}
 	/**
 	 * @return the nom
 	 */
