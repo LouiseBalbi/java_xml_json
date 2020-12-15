@@ -1,0 +1,54 @@
+[{
+    "nom": "Google",
+    "siegeSocial": {
+        "nom": "Googleplex",
+        "ville": "Mountain view",
+        "etat": "California",
+        "pays": "United States"
+    },
+    "fondateurs": [
+        {"prenom": "Larry",
+        "nom": "Page",
+        "naissance": "26/03/1973",
+        "villeNaissance": "East Lansing",
+        "etatNaissance": "Michigan"
+    },
+    {"prenom": "Sergey",
+        "nom": "Brin",
+        "naissance": "21/08/1973",
+        "villeNaissance": "Moscou,",
+        "etatNaissance": "Union Soviétique"
+    }
+    ],
+    "chiffreAffaire":[
+        { "annee":2008, "montant": 16.49, "unite":"milliard$"},
+        {"annee": 2012, "montant": 37.97, "unite":"milliard$"},
+        {"annee": 2016, "montant": 89.46, "unite":"milliard$"},
+        {"annee": 2018, "montant": 136.2, "unite":"milliard$"}   
+    ]
+},
+
+{
+    "nom": "Amazon",
+    "siegeSocial": {
+        "nom": "Amazon",
+        "ville": "Seattle,",
+        "etat": "Washington,",
+        "pays": "United States"
+    },
+    "fondateurs": [
+        {"prenom": "Jeff",
+        "nom": "Bezos",
+        "naissance": "12/01/1964",
+        "villeNaissance": "Albuquerque,",
+        "etatNaissance": "Nouveau-Mexique"
+    }],
+    "chiffreAffaire":[
+        {"annee":2010, "montant": 34.2, "unite":"milliard$"},
+        {"annee": 2012, "montant": 61.1, "unite":"milliard$"},
+        {"annee": 2016, "montant": 136, "unite":"milliard$"},
+        {"annee": 2018, "montant": 235.9, "unite":"milliard$"}   
+    ]
+}
+
+]
