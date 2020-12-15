@@ -118,6 +118,7 @@ public class PaysListe {
         "donneesDemographiques",
         "donneesEconomiques"
     })
+    @XmlRootElement(name = "pays")
     public static class Pays {
 
         @XmlElement(required = true)
@@ -128,8 +129,27 @@ public class PaysListe {
         protected DonneesDemographiques donneesDemographiques;
         @XmlElement(required = true)
         protected DonneesEconomiques donneesEconomiques;
+        
 
         /**
+		 * @param nom
+		 */
+		public Pays(String nom) {
+			super();
+			this.nom = nom;
+		}
+		
+
+		/**
+		 * 
+		 */
+		public Pays() {
+			super();
+		}
+
+
+
+		/**
          * Gets the value of the nom property.
          * 
          * @return
