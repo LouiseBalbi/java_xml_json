@@ -6,20 +6,23 @@ import java.util.List;
 import javax.xml.bind.JAXBContext;
 import javax.xml.bind.Unmarshaller;
 
+import fr.diginamic.jaxb.beans.PaysListe;
+;
+
 public class TestXml {
 
 	public static void main(String[] args) throws Exception{
 		
-		JAXBContext context = JAXBContext.newInstance(ListePays.class);
+		JAXBContext context = JAXBContext.newInstance(PaysListe.class);
 		Unmarshaller unmarshaller = context.createUnmarshaller();
 		
-		ListePays racine = (ListePays) unmarshaller.unmarshal(new File("src\\main\\resources\\fr\\diginamic\\xml\\formatageXml.xml"));
+		PaysListe racine = (PaysListe) unmarshaller.unmarshal(new File("src\\main\\resources\\fr\\diginamic\\xml\\formatageXml.xml"));
 
 		System.out.println(racine);
 		System.out.println(racine.getPays());
-		List<Pays> liste = racine.getPays();
+		List<PaysListe.Pays> liste = racine.getPays();
 		
-		for(Pays pays: liste) {
+		for(PaysListe.Pays pays: liste) {
 			System.out.println("Nom pays : " + pays.getNom());
 			System.out.println("Date : " + pays.getDateDeReleve());
 			System.out.println("fecondite : " + pays.getDonneesDemographiques().getFecondite().getValue());

@@ -1,4 +1,4 @@
-package fr.diginamic.jaxb;
+package fr.diginamic.jaxb.old;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;

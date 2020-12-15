@@ -1,4 +1,4 @@
-package fr.diginamic.jaxb;
+package fr.diginamic.jaxb.old;
 
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
@@ -8,9 +8,9 @@ import javax.xml.bind.annotation.XmlRootElement;
 import javax.xml.bind.annotation.XmlValue;
 
 @XmlAccessorType(XmlAccessType.FIELD)
-@XmlRootElement(name = "fecondite")
-public class Fecondite {
-		
+@XmlRootElement(name = "population")
+public class Population {
+	
 	@XmlValue
 	private double value;
 
@@ -46,5 +46,4 @@ public class Fecondite {
 	}
 	
 	
-
 }
