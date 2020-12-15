@@ -38,6 +38,25 @@
 					<encoding>UTF-8</encoding>
 				</configuration>
 			</plugin>
+
+			<plugin>
+				<groupId>org.jsonschema2pojo</groupId>
+				<artifactId>jsonschema2pojo-maven-plugin</artifactId>
+				<version>1.0.2</version>
+				<configuration>
+					<sourceDirectory>${basedir}/src/main/resources/fr/diginamic/json</sourceDirectory>
+					<targetPackage>fr.diginamic.jackson.beans</targetPackage>
+					<outputDirectory>src/main/resources</outputDirectory>
+					<sourceType>json</sourceType>
+				</configuration>
+				<executions>
+					<execution>
+						<goals>
+							<goal>generate</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
 		</plugins>
 	</build>
 

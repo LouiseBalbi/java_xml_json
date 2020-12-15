@@ -1,4 +1,4 @@
-package fr.diginamic.jackson;
+package fr.diginamic.jackson.old;
 
 import java.time.LocalDate;
 

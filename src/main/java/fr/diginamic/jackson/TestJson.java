@@ -6,6 +6,8 @@ import java.util.List;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.fasterxml.jackson.databind.type.CollectionType;
 
+import fr.diginamic.jackson.old.Societe;
+
 public class TestJson {
 
 	public static void main(String[] args) throws Exception {
@@ -18,6 +20,7 @@ public class TestJson {
 		for(Societe s: societes) {
 			System.out.println("Nom : " + s.getNom());
 			System.out.println("Nom fondateur 1 : " + s.getFondateurs().get(0).toString());
+			System.out.println(s.getChiffreAffaire().get(0).toString());
 		}
 		
 	}

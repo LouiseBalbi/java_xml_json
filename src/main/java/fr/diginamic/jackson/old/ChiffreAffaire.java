@@ -1,4 +1,4 @@
-package fr.diginamic.jackson;
+package fr.diginamic.jackson.old;
 
 public class ChiffreAffaire {
 	
@@ -41,6 +41,11 @@ public class ChiffreAffaire {
 	public void setUnite(String unite) {
 		this.unite = unite;
 	}
+	@Override
+	public String toString() {
+		return "ChiffreAffaire [annee=" + annee + ", montant=" + montant + ", unite=" + unite + "]";
+	}
+	
 	
 
 }

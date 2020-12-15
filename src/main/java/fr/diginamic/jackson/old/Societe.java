@@ -1,4 +1,4 @@
-package fr.diginamic.jackson;
+package fr.diginamic.jackson.old;
 
 import java.util.ArrayList;
 import java.util.List;
