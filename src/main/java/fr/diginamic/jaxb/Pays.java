@@ -1,9 +1,12 @@
 package fr.diginamic.jaxb;
 
+import java.time.LocalDate;
+
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlElement;
 import javax.xml.bind.annotation.XmlRootElement;
+import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
 @XmlAccessorType(XmlAccessType.FIELD)
 @XmlRootElement(name = "pays")
@@ -12,7 +15,8 @@ public class Pays {
 	@XmlElement
 	private String nom;
 	@XmlElement
-	private String dateDeReleve;
+	@XmlJavaTypeAdapter(LocalDateAdapter.class)
+	private LocalDate dateDeReleve;
 	@XmlElement
 	private DonneesDemographiques donneesDemographiques;
 	@XmlElement
@@ -29,16 +33,17 @@ public class Pays {
 	public void setNom(String nom) {
 		this.nom = nom;
 	}
+
 	/**
 	 * @return the dateDeReleve
 	 */
-	public String getDateDeReleve() {
+	public LocalDate getDateDeReleve() {
 		return dateDeReleve;
 	}
 	/**
 	 * @param dateDeReleve the dateDeReleve to set
 	 */
-	public void setDateDeReleve(String dateDeReleve) {
+	public void setDateDeReleve(LocalDate dateDeReleve) {
 		this.dateDeReleve = dateDeReleve;
 	}
 	/**

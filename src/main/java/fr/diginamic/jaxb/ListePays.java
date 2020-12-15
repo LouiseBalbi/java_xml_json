@@ -11,22 +11,23 @@ import javax.xml.bind.annotation.XmlRootElement;
 @XmlRootElement(name = "paysListe")
 public class ListePays {
 	
-	@XmlElement
-	protected List<Pays> paysListe;
+	@XmlElement()
+	protected List<Pays> pays;
 
 	/**
-	 * @return the paysListe
+	 * @return the pays
 	 */
-	public List<Pays> getPaysListe() {
-		return paysListe;
+	public List<Pays> getPays() {
+		return pays;
 	}
 
 	/**
-	 * @param paysListe the paysListe to set
+	 * @param pays the pays to set
 	 */
-	public void setPaysListe(List<Pays> paysListe) {
-		this.paysListe = paysListe;
+	public void setPays(List<Pays> pays) {
+		this.pays = pays;
 	}
+
 	
 	
 	
